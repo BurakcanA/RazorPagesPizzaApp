@@ -1,7 +1,7 @@
 ﻿using System;
 namespace RazorPizza.Models
 {
-	public class PızzasModel
+	public class PizzasModel
 	{
 		public string ImageTitle { get; set; }
 		public string PizzaName { get; set; }

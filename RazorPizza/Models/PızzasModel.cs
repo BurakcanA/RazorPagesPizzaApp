@@ -15,7 +15,6 @@ namespace RazorPizza.Models
         public bool Ham { get; set; }
         public bool Beef  { get; set; }
         public float FinalPrice { get; set; }
-
     }
 }
 

@@ -8,12 +8,18 @@ using DLL;
 
 namespace RazorPizza.Pages.DataAcces
 {
-	public class OrderListModel : PageModel
+    public class OrderListModel : PageModel
     {
         DataContext dataContext = new DataContext();
         public void OnGet()
         {
-            List<Order> orders= dataContext.Orders.ToList();
+            List<Order> Orders= dataContext.Orders.ToList();
+            Dborders = Orders;
         }
+
+        [BindProperty]
+        public List<Order> Dborders { get; set; }
+
     }
 }
+    

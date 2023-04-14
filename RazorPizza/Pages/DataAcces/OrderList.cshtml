@@ -5,3 +5,12 @@
 
 <h1>Order List!</h1>
 
+@{
+   
+
+    foreach (var Pizza in Model.Dborders)
+    {
+        <h1>@Pizza.PizzaName is Ordered <strong>@Pizza.BasePrice$</strong></h1>
+    }
+ }
+
